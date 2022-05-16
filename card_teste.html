@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+
+
+.card {
+  display: inline-block;
+  font-family: "Josefin sans", sans-serif;
+  transition: 0.3s;
+  width: 300px;
+  height:300px;/*auto*/
+  /*background-color: rgb(31, 131, 208);*/
+  background-image: linear-gradient(to right, rgb(49, 0, 128), rgb(123, 0, 255));
+  /*background-image: linear-gradient(to left, #BE7429,#D9AB55,#F4EEAE,#F2EC66,#C0782B);*/
+  border-radius:50%; 
+  margin:55px 20px;
+  box-shadow: 0px 0px 10px 1px rgb(49, 0, 128);
+  /*box-shadow: 0px 0px 10px #dcf710,;*/
+}
+
+
+.card img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius:100%;
+  padding:0px;
+
+}
+
+.card:hover {
+  box-shadow: 0px 0px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  display: none; /*block*/
+  padding: 2px 16px;
+  height: 210px;
+  transform: 5s;
+}
+.contrate-agora {
+    display: none; /*block*/
+    padding:15px 60px;
+    margin:25px auto;
+    border-radius:10px;
+    border:1px solid white;
+    font-family: 'Josefin Sans';
+    font-size: 24px;
+    color: rgb(49, 0, 128);
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.center {
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.nome_aluno {
+    font-size:20px;
+    text-align: center;
+}
+
+.card p{
+    font-weight:300;
+}
+
+p.center {
+    font-weight: 500;
+}
+
+.card:hover .container  {
+  background-color: purple;
+  display:block;
+  height: auto;
+  transition-duration: 3s;
+  width: auto;
+  border-radius:15px;
+  color: white;
+}
+
+/*.container {
+    display: none;
+}
+
+.card {
+    border-radius: 50%;
+}
+*/
+/*.content {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 100px;
+    background-color:#4850ca;
+}*/
+
+#container_cards {
+  display: block;
+  max-width: 1088px;
+  margin:0 auto
+}
+
+
+@media (max-width:1121px) {
+  .card {
+    margin:100px 
+  }
+}
+
+@media (max-width:1078px) {
+  .card {
+    margin: 80px;
+  }
+}
+
+@media (max-width:997px) {
+  .card {
+    margin: 60px;
+  }
+}
+
+@media (max-width:913px) {
+  .card {
+    margin: 25px;
+  }
+}
+
+@media (max-width:837px) {
+  .card {
+    margin: 25px;
+  }
+}
+
+@media (max-width:776px) {
+  .card {
+    display: block;
+    margin: 80px auto;
+    height: 261px;
+    width: 198px;
+    border-radius:50%;
+  }
+
+}
+</style>
+</head>
+<body>
+
+<div id="container_cards">
+
+<div class="card">
+  <img src="ti_300/gui.png" alt="Avatar">
+  <h4 class="nome_aluno"><b>Guilherme De Oliveira - 16 anos</b></h4> 
+  <div class="container">
+    <p class="center">Objetivo: </p>
+    <p>Manutenção de Computadores</p>
+    <p class="center">Formação:</p>
+    <p>Operador de Microcomputador<p>
+    <p>Desenhista de Paginas Web</p>
+  </div>
+  <button class="contrate-agora">Contrate-agora</button>
+</div>
+
+<div class="card">
+  <img src="ti_300/alan.png" alt="Avatar">
+  <h4 class="nome_aluno"><b>Alan Victor - 19 anos</b></h4> 
+  <div class="container">
+    <p class="center">Objetivo:</p>
+    <p>Técnico de Informatica</p>
+    <p class="center">Formação:</p>
+    <p>Operador de Microcomputador<p>
+    <p>Assitente de Tecnologia da Informação</p>
+    <p>Desenhista de Paginas Web</p>
+  </div>
+  <button class="contrate-agora">Contrate-agora</button>
+</div>
+
+
+
+
+<div class="card">
+  <img src="ti_300/gabi.png" alt="Avatar">
+  <h4 class="nome_aluno"><b>Gabriely Silva - 15 anos</b></h4> 
+  <div class="container">
+    <p class="center">Objetivo: </p>
+    <p>Tecnico de Informática</p>
+    <p class="center">Formação:</p>
+    <p>Operador de Microcomputador<p>
+      <p>Desenhista de Paginas Web</p>
+    </div>
+    <button class="contrate-agora">Contrate-agora</button>
+  </div>
+  
+  <div class="card">
+    <img src="ti_300/kauaa.png" alt="Avatar">
+    <h4 class="nome_aluno"><b>Kauã Alves - 18 anos</b></h4> 
+    <div class="container">
+      <p class="center">Objetivo: </p>
+      <p>Administração</p>
+      <p class="center">Formação:</p>
+      <p>Operador de Microcomputador<p>
+        <p>Administração com Telemarketing</p>
+      </div>
+      <button class="contrate-agora">Contrate-agora</button>
+    </div>
+    
+    <div class="card">
+      <img src="ti_300/marcio.png" alt="Avatar">
+      <h4 class="nome_aluno"><b>Marcio José - 18 anos</b></h4> 
+      <div class="container">
+        <p class="center">Objetivo: </p>
+        <p>Programação</p>
+        <p class="center">Formação:</p>
+        <p>Operador de Microcomputador<p>
+        <p>Tecnologia da Informação</p>
+        <p>Desenhista de Paginas Web</p>
+        </div>
+        <button class="contrate-agora">Contrate-agora</button>
+    </div>
+    
+    
+    
+    <div class="card">
+      <img src="ti_300/matheus.png" alt="Avatar">
+      <h4 class="nome_aluno"><b>Matheus Seabra - 16 anos</b></h4> 
+      <div class="container">
+        <p class="center">Objetivo: </p>
+        <p>Tecnologia da Informação</p>
+        <p class="center">Formação:</p>
+        <p>Operador de Microcomputador<p>
+          <p>Administração com Telemarketing</p>
+          <p>Desenhista de Páginas Web</p>
+        </div>
+        <button class="contrate-agora">Contrate-agora</button>
+      </div>
+      
+      <div class="card">
+        <img src="ti_300/kelvin.png" alt="Avatar">
+        <h4 class="nome_aluno"><b>Kelvin da Silva - 18 anos</b></h4> 
+        <div class="container">
+          <p class="center">Objetivo: </p>
+          <p>Programação</p>
+          <p class="center">Formação:</p>
+          <p>Operador de Microcomputador<p>
+            <p>Desenhista de Páginas Web</p>
+          </div>
+          <button class="contrate-agora">Contrate-agora</button>
+        </div>
+      
+      <div class="card">
+        <img src="ti_300/marques.png" alt="Avatar">
+        <h4 class="nome_aluno"><b>Marques Willian - 17 anos</b></h4> 
+        <div class="container">
+          <p class="center">Objetivo: </p>
+          <p>Administração</p>
+          <p class="center">Formação:</p>
+          <p>Operador de Microcomputador<p>
+            <p>Administração com Telemarketing</p>
+            <p>Desenhista de Páginas Web</p>
+          </div>
+          <button class="contrate-agora">Contrate-agora</button>
+        </div>
+        
+        <div class="card">
+          <img src="ti_300/andre.png" alt="Avatar">
+          <h4 class="nome_aluno"><b>Marcio José - 18 anos</b></h4> 
+          <div class="container">
+            <p class="center">Objetivo: </p>
+            <p>Tecnico de Informatica</p>
+            <p class="center">Formação:</p>
+            <p>Operador de Microcomputador<p>
+              <p>Assitente de Tecnologia da Informação</p>
+          <p>Desenhista de Paginas Web</p>
+        </div>
+        <button class="contrate-agora">Contrate-agora</button>
+      </div>
+
+      <div class="card">
+        <img src="ti_300/andre.png" alt="Avatar">
+        <h4 class="nome_aluno"><b>Marcio José do santos Junior</b></h4> 
+        <div class="container">
+          <p class="center">Objetivo: </p>
+          <p>Tecnico de Informatica</p>
+          <p class="center">Formação:</p>
+          <p>Operador de Microcomputador<p>
+            <p>Assitente de Tecnologia da Informação</p>
+        <p>Desenhista de Paginas Web</p>
+      </div>
+      <button class="contrate-agora">Contrate-agora</button>
+    </div>
+      
+      
+      
+      <div class="card">
+        <img src="ti_300/bia.png" alt="Avatar">
+        <h4 class="nome_aluno"><b>Beatriz Vitoria - 17 anos</b></h4> 
+        <div class="container">
+          <p class="center">Objetivo: </p>
+        <p>Técnica de Informática</p>
+        <p class="center">Formação:</p>
+        <p>Operador de Microcomputador<p>
+          <p>Tecnologia da Informação</p>
+        <p>Desenhista de Paginas Web</p>
+      </div>
+      <button class="contrate-agora">Contrate-agora</button>
+    </div>
+
+    <div class="card">
+      <img src="ti_300/luis.png" alt="Avatar">
+      <h4 class="nome_aluno"><b>Luis Felipe - 17 anos</b></h4> 
+      <div class="container">
+        <p class="center">Objetivo: </p>
+        <p>Desenvolvedor de Sistemas</p>
+        <p class="center">Formação:</p>
+        <p>Operador de Microcomputador<p>
+          <p>Tecnologia da Informação</p>
+          <p>Desenhista de Paginas Web</p>
+        </div>
+      <button class="contrate-agora">Contrate-agora</button>
+    </div>
+
+    <div class="card">
+      <img src="ti_300/breno.png" alt="Avatar">
+      <h4 class="nome_aluno"><b>Breno da Silva - 18 anos</b></h4> 
+      <div class="container">
+        <p class="center">Objetivo: </p>
+        <p>Administração</p>
+        <p class="center">Formação:</p>
+        <p>Operador de Microcomputador<p>
+          <p>Desenhista de Paginas Web</p>
+        </div>
+        <button class="contrate-agora">Contrate-agora</button>
+      </div>
+
+    <div class="card">
+      <img src="ti_300/kleber.png" alt="Avatar">
+      <h4 class="nome_aluno"><b>Cleber Mendes - 16 anos</b></h4> 
+      <div class="container">
+        <p class="center">Objetivo: </p>
+        <p>Tecnico de Informática</p>
+        <p class="center">Formação:</p>
+        <p>Operador de Microcomputador<p>
+          <p>Desenhista de Paginas Web</p>
+        </div>
+        <button class="contrate-agora">Contrate-agora</button>
+      </div>
+      
+      <div class="card">
+        <img src="ti_300/kauan.png" alt="Avatar">
+        <h4 class="nome_aluno"><b>Kauan Soares - 19 anos</b></h4> 
+        <div class="container">
+          <p class="center">Objetivo: </p>
+          <p>Tecnico de Informática</p>
+          <p class="center">Formação:</p>
+          <p>Operador de Microcomputador<p>
+          <p>Tecnologia da Informação</p>
+          <p>Desenhista de Paginas Web</p>
+          </div>
+          <button class="contrate-agora">Contrate-agora</button>
+        </div>
+
+        <div class="card">
+          <img src="ti_300/giovanna.png" alt="Avatar">
+          <h4 class="nome_aluno"><b>Giovanna Souza - 78 anos</b></h4> 
+          <div class="container">
+            <p class="center">Objetivo: </p>
+            <p>Engenharia Mecânica</p>
+            <p class="center">Formação:</p>
+            <p>Operador de Microcomputador<p>
+            <p>Desenhista e Ajustador Mecânico</p>
+          </div>
+            <button class="contrate-agora">Contrate-agora</button>
+          </div>
+
+  </div>
+  </body>
+  </html>
